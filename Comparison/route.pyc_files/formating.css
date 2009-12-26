@@ -1,0 +1,164 @@
+/* #################################################### */
+/* Patton Electronics Co.                               */
+/* Trinity                                              */
+/* #################################################### */
+
+body { width:100%; margin:0px; padding:0px; vertical-align:top; font-family:Helvetica,Arial,sans-serif; font-size:0.8em; }
+
+/* #################################################### */
+/* banner                                               */
+/* #################################################### */
+
+#banner { position:relative; background-color:#476687; border-bottom:3px solid #476687; background-image: url(/patton/patton_background.png); background-repeat: repeat-x; height:45px; padding:0px; margin:0px; z-index:20}
+#banner .productInfo { float: right; height:42px; margin: 0; padding: 3px 15px 0px 15px; text-align: right; font-size: 11px; color: white;}
+#banner .productAction { float: right; width:47px; height:42px; margin: 0; padding: 1px 5px 0px 15px; text-align: center; font-size: 11px;}
+#banner .productAction form { padding: 0; margin: 0;}
+#banner .bannerbutton  { margin: 2px; width: 42px; border: 1px solid #002156; background: #E7F0F5; padding: 0px 1px; font-size: 10px;}
+#banner table {padding:0; margin: 0;}
+#banner table tr {padding:0; margin: 0;}
+#banner table td {padding:0; margin: 0;}
+
+/* #################################################### */
+/* navbar                                               */
+/* #################################################### */
+
+#navbarbg {position:fixed; background-color: #E7F0F5; vertical-align:bottom; height:100%; width:13.5em; z-index:1}
+
+#navbar {position:absolute; top:0px; left: 0px; border-left:5px solid #40668C; border-right:1px solid #476687; border-bottom:1px solid #476687; background-color:#40668c; font-size:1.0em; padding:0; width:13em; margin:48px 0 0 0; z-index:20;}
+
+#navbar hr { height:1px; background: #E7F0F5; border:1px solid #7490AB; }
+
+#navbar ul.aqtree3clickable { margin-bottom: 2px; }
+
+#navbar ul.aqtree3clickable li {
+	list-style: none; /* Turn off list bullets */
+	background:#E7F0F5; text-decoration:none; font-weight:bold; }
+
+#navbar ul.aqtree3clickable    { margin: 0px; padding: 0px; font-size: 0.9em;}
+#navbar ul.aqtree3clickable ul { margin: 0px; padding: 0px; }
+#navbar ul.aqtree3clickable li { margin: 0px; padding: 0px;	border-top: 1px solid #7490AB; border-bottom: 1px solid #CCD7E0; }
+
+/* This controls the indent for each sublist */
+#navbar ul.aqtree3clickable ul { padding-left: 10px; }
+#navbar ul.aqtree3clickable ul a { font-weight: normal; }
+
+/* Provide space for our own "bullet" inside the link */
+#navbar ul.aqtree3clickable li a { text-decoration: none; padding:0.25em 0.5em 0.25em 20px;	color:#082F57; display:block; }
+#navbar ul.aqtree3clickable li a:hover { text-decoration: underline; }
+
+/* Show "bullets" in the links, depending on the class of the
+   LI that the link's in */
+#navbar ul.aqtree3clickable li.aq3open a { background: url(/patton/minus.gif) center left no-repeat; }
+#navbar ul.aqtree3clickable li.aq3closed a { background: url(/patton/plus.gif) center left no-repeat; }
+#navbar ul.aqtree3clickable li.aq3bullet a { background: url(/patton/bullet.gif) center left no-repeat; }
+
+/* Actually show and hide sublists */
+#navbar ul.aqtree3clickable li.aq3open ul { display: block; }
+#navbar ul.aqtree3clickable li.aq3closed ul { display: none; }
+
+
+/* #################################################### */
+/* content                                              */
+/* #################################################### */
+
+#content { padding:0px; margin:0px 0px 0 13.5em; position:relative; z-index:30 }
+
+h1 { margin:0px; padding:1px 0 0 0; background-color:#E7F0F5; border-bottom:1px solid #476687; font-size:1.6em; text-align:center; color:#082F57; font-weight:bold; }
+
+#content hr { border: 0 none; border-top: 1px solid #476687; height: 1px; }
+
+/* need for some functions */
+/* .infoCell { width:95%; font-size:0.85em; margin:0px; padding:1em; display:block; float:left} */
+
+.infoCell_1-3 { width:14.50em; font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+.infoCell_2-3 {	width:31.5em; font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+.infoCell_3-3 { width:43em; font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+.infoCell_dyn { font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+.infoCell_full_fix { width:48em; font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+.infoCell_full_dyn { width:95%; font-size:0.85em; margin:0px; padding:2em 1em 1em 1em; display:block; float:left}
+
+.infoCell_clear { border:none; color: #ffffff; margin:0px; padding:0px; display:block; clear:left}
+
+#content .title { padding:0px 4px 0px 4px; font-size:1.2em; margin:0px; background:#E7F0F5; color:#082F57; border:1px solid #476687; text-align:center;  }
+#content .info { border:1px solid #476687; padding:5px 5px 3px 5px;}
+
+.infoCell_dyn .title { padding:0px 4px 0px 4px; font-size:1.2em; margin:0px; background:#E7F0F5; color:#082F57; border:1px solid #476687; text-align:center;  }
+.infoCell_dyn .info { border:1px solid #476687; padding:5px 5px 3px 5px;}
+
+input[disabled] { background:#CECECE; color:#000; border:1px #7F9DB9 solid; padding:1px }
+
+.infoTable { margin:2px 15px 5px 5px }
+.infoTable tr td { padding:0px 5px 0px 2px }
+
+.label { text-align:right; font-weight:bold;}
+.value { text-align:left; }
+
+.shhidden { visibility:hidden; }
+.shvisible { visibility:visible; }
+.shinit { visibility:visible; }
+
+.helpLabel { border-bottom:1px dotted; cursor:help; }
+
+.inputError { color:#FFF; background:#D40B0B }
+
+.displayTable { width:100%;	table-layout:auto; text-align:center; font-size:1.0em }
+
+.displayTable th { font-weight: bold; background-color:#002156; color:white; font-size:1.1em }
+
+.displayTable td { font-size:1.0em }
+
+/* we need to make the .helpLabel in a .displayTable more readable */
+.displayTable .helpLabel { color: lightblue; }
+
+.evenRow, .evenRow a { background-color: #E7F0F5; color: #082F57; }
+.oddRow,  .oddRow a  { background-color: #476687; color: #FFF; }
+
+.error   { color: #D40B0B;  font-size: .9em; }
+.warning { color: #F08951;  font-size: .9em; }
+.infomsg { color: darkblue; font-size: .9em; }
+
+.alignment { width: 100% }
+.alignment td { vertical-align: top; padding: 0px; }
+
+.flatbutton { margin: 5px; border: 1px solid #002156; background: #E7F0F5; padding: 1px 1px; }
+
+
+/* #################################################### */
+/* tabbar                                               */
+/* #################################################### */
+
+#tabbar{ text-align:center;	padding:3px 0; margin-left:0; margin-bottom:0; border-bottom: 1px solid #476687; font-size: 1.0em; text-shadow:gray .1em .1em .2em; }
+
+#tabbar li { list-style: none; margin:0; display:inline; }
+
+#tabbar li a, #tabbar li a:link, #tabbar li a:visited {	padding:3px 0.5em; margin-left:3px;	border:1px solid #476687; border-bottom: none; background:#E7F0F5; text-decoration: none; color:#082F57; }
+#tabbar li a:hover { color:#FFF;	background:#002156; }
+
+#tabbar #active { background:white;	border-bottom: 1px solid white;	font-weight:bold; background:#40668C; color:#FFF; }
+#tabbar #active:hover {	background:white; border-bottom: 1px solid white; font-weight:bold;	background:#002156; color:#FFF; }
+
+/* #################################################### */
+/* tabbar_bottom                                        */
+/* #################################################### */
+
+#tabbar_bottom{ text-align:center;	padding:3px 0; margin-left:0; margin-top:0; font-size: 1.0em; text-shadow:gray .1em .1em .2em; }
+
+#tabbar_bottom li { list-style: none; margin:0; display:inline; }
+
+#tabbar_bottom li a, #tabbar_bottom li a:link, #tabbar_bottom li a:visited {	padding:3px 0.5em; margin-left:3px;	border:1px solid #476687; border-top: none; background:#E7F0F5; text-decoration: none; color:#082F57; }
+#tabbar_bottom li a:hover { color:#FFF;	background:#002156; }
+
+#tabbar_bottom #active { background:white;	border-bottom: 1px solid white;	font-weight:bold; background:#40668C; color:#FFF; }
+#tabbar_bottom #active:hover {	background:white; border-bottom: 1px solid white; font-weight:bold;	background:#002156; color:#FFF; }
+
+/* #################################################### */
+/* footer                                               */
+/* #################################################### */
+
+#footer { clear:left; border-top:1px solid #40668C; background-color:#E7F0F5; color:#7490AB; font-size:0.8em; text-align:center; padding:50px 0px 5px 0px; margin:0;}
+
+#footer  p { margin:0; padding:5px 0 0 0; border-top:1px solid #40668C;}
+
+#footer  a { color:#7490AB; background:transparent; text-decoration:underline; }
+#footer a:hover, a:visited, a:active, a:focus { color:red; background:transparent; }
+
