@@ -1,0 +1,33 @@
+<html>
+<head>
+  
+<title>Patton Web interface</title>
+
+<!-- Styles -->
+<link href="css/ext-all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/xtheme-blue.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!-- Ext package -->
+<script src="ext-base.js" type="text/javascript"></script>
+<script src="ext-all-debug.js" type="text/javascript"></script>
+
+<!-- My own code -->
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script src="js/navdata.js" type="text/javascript"></script>
+<script src="js/StaticRoute.js" type="text/javascript"></script>
+
+</head>
+<body>
+  
+  <script>
+  new Ext.Viewport({
+    layout: 'border',
+    items: [
+      Patton.main()
+    ]
+  });
+  </script>
+  
+</body>
+</html>
